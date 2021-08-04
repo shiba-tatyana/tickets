@@ -7,7 +7,7 @@
     <title>Продажа билетов в кино в Иннополисе</title>
     <style>
         table{
-      width: 200px;     
+      width: 100%;     
     border-collapse: collapse;
     border: 1px solid black;
         }
@@ -29,36 +29,29 @@
     
         }
         li{display: inline;}
-    </style>
+        footer{
+            display: inline-block;
+        }
+    
+     </style>
  </head>
  <body>
     <header>
- <div>
+ <div> 
    <nav> 
-<ul>
+ <ul>
      <li><a href="http://university.innopolis.ru" title="Иннополис Университет"target="_blank"><strong>innopolis university</strong></a></li> 
      <li><a href="#+7 (800) 355 12-56" >+7 (800) 355 12-56</a></li> 
      <li><a href="#kino@innopolis.ru" >kino@innopolis.ru</a></li>
      <li><a href="#ул.Спортивная д.1" >ул.Спортивная д.1</a></li>
-     <li><a href="#Почему мы?" >Почему Мы?</a></li>
-     <div id="Почему мы?" ></div>
-     <li><a href="#Выберите фильм" >Выберите фильм</a></li>
-     <div id="Выберите фильм" ></div> 
-     <li><a  href="#Подарок каждому" >Подарок каждому</a></li>
-     <div>
-        <a name="Подарок каждому" ></a>
-     </div>
-     <li><a  href="#Фильмы" >Фильмы</a></li>
-     <div>
-        <a name="Фильмы" ></a>
-     </div>
-     <li><a  href="#Товары" >Товары</a></li>
-     <div>
-        <a name="Товары" ></a>
-        <div style="height: 200px;background: lightpink;" ></div>
-     </div>
+     <li><a href="#why are we?" >Почему Мы?</a></li>
+     <li><a href="#select a movie" >Выберите фильм</a></li>
+     <li><a href="#a gift to everyone" >Подарок каждому</a></li>
+     <li><a href="#films" >Фильмы</a></li>
+     <li><a href="#goods" >Товары</a></li>
  </ul>
- </nav>   
+ </nav> 
+ <div style="height: 200px;background: lightpink;" ></div>  
  </div>
     </header>
  <h1>Закажите билет в кино</h1>
@@ -74,6 +67,7 @@
              </p> 
      
          <p>Почему мы?</p>
+         <div id="why are we?" ></div>
          <span><strong>Большие экраны</strong></span>
          <div><img src="images/zvuk.jpg" alt="Экран"/></div>
          
@@ -130,11 +124,10 @@
              </p>
          </div>
      <div>
-         <table style="width: 500px;">
+         <table style="width: 100%;">
              <thead>
-              <div>
-                <p><strong>Выберите фильм</strong></p>  
-              </div>   
+                 <div id="select a movie" ></div>
+                 <h2><strong>Выберите фильм</strong></h2>    
              <tr>
                 <th>Начало сеанса</th>
                 <th>Название фильма</th>
@@ -175,7 +168,9 @@
        </div>
      </div>
      <div>
-         <span>Подарок каждому</span>
+
+        <div id="a gift to everyone" ></div>
+         <div>Подарок каждому</div>
              <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ex facilis in. Aliquid minus rerum vero iusto, maiores neque aperiam laudantium corporis vitae nostrum, tempore labore doloribus nam perspiciatis velit.
              Quasi, laborum vel nisi, excepturi in dolorum nihil mollitia odit odio ipsum facere aliquam totam maxime veritatis consequuntur magni id. Vel expedita reprehenderit eius ipsam corporis ex ratione fugiat magnam!
@@ -185,7 +180,8 @@
       <span>Получить подарок</span>
      </div>
      <div>
-     <h2>Фильмы</h2>
+        <div id="films" ></div>
+     <h3>Фильмы</h3>
      <p>
          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora iure doloribus quam. Cumque corrupti fugit saepe voluptatem possimus nam eum libero! Veritatis impedit at minima maiores, architecto est doloremque ipsam.
          Voluptas consequuntur ea, dolorum est eveniet quibusdam sint omnis quas explicabo molestiae magnam. Corrupti debitis maiores quisquam! Qui necessitatibus in repellendus, fugiat fugit deleniti placeat quo asperiores molestias excepturi perferendis.
@@ -201,7 +197,8 @@
          </p>
      </div>
      </div>
-     <span><strong>Товары</strong></span>
+     <div id="goods" ></div>
+     <div><strong>Товары</strong></div>
          <p>
          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dicta cum aliquam ea beatae, fugiat ullam eveniet praesentium omnis et expedita quisquam eligendi, enim quaerat explicabo impedit necessitatibus perspiciatis soluta?
          Delectus molestias esse placeat harum obcaecati eligendi sapiente quidem ipsa commodi ipsum incidunt dolorem ut quas, consequatur labore dolores ducimus eos dolor sunt. Temporibus officiis debitis ipsam corrupti tempora veritatis.
@@ -272,15 +269,15 @@
      </form>
      </div>
      <footer>
-       <div>
-         <span> INNOPOLIS UNIVERSITY</span>
-        <p>
+         <div>
+         <div>INNOPOLIS UNIVERSITY</div> 
+         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum facere esse id perspiciatis est eius velit, dicta quibusdam aperiam tenetur? Voluptas laboriosam dolores delectus deserunt, dolore sunt dignissimos consectetur quae.
           Nihil unde modi voluptatem obcaecati enim odio fugiat, debitis est facilis fuga tenetur saepe explicabo iure beatae perspiciatis in consectetur. Aliquam tempore, aperiam vel beatae iste voluptatibus quasi mollitia pariatur!
           Dicta architecto tempore quisquam quia ex libero rem! Iusto assumenda dicta quis ullam explicabo laudantium, tempore repellendus quos facere est dolor ea quidem harum magni? Eaque maiores debitis facere quos!
           Dolor quisquam aperiam iste soluta commodi suscipit, praesentium cum necessitatibus sed minus vero atque laudantium natus, eos laboriosam? Perspiciatis itaque quibusdam doloremque ab porro illum rerum nihil numquam mollitia consequatur!
-        </p>
-         <span>SAITE</span>
+         </p>
+         <div>SAITE</div>
          <div>
             <a style="display: table;" href="#"target="_blank">Почему мы?</a>
             <a style="display: table;" href="#"target="_blank">Выберите фильм</a>
@@ -289,13 +286,13 @@
             <a style="display: table;" href="#"target="_blank">CONTACT</a>
 
          </div>
-         <span>CONTACT</span>
+         <div>CONTACT</div>
          <div>
          <span>+7 (800) 355 12-56 </span>
-         <a style="display: table;" href="#"target="_blank">kino@innopolis.ru</a>
+         <a style="display:table" href="#"target="_blank">kino@innopolis.ru</a>
          <span>420500, г. Иннополис ул.Университетская, д.1</span>
-         <a style="display: table;" href="#"target="_blank">Как добраться</a>
-         <a style="display: table;" href="#"target="_blank">Все конакты</a>
+         <a style="display: table" href="#"target="_blank">Как добраться</a>
+         <a style="display: table" href="#"target="_blank">Все конакты</a>
          </div>
        </div>
     </footer>
