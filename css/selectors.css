@@ -1,0 +1,20 @@
+body{
+    background:  #6592CF;
+}
+.block__qvadrat {
+    background: #243D83;
+    width: 400px;
+    height: 300px;
+    margin: 350px 350px 350px 350px;
+}
+.block__qvadrat:before{
+    content: "";
+    background:  red;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 50px solid  #243D83;
+    border-bottom: 50px solid transparent;
+   
+   
+}

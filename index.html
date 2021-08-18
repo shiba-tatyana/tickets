@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Продажа билетов в кино в Иннополисе</title>
+    <link rel="stylesheet" href="/css/main.css">
     <style>
         .movie-table {
             border-collapse: collapse;
-            width: 100%;
+            margin: 84px 137px 30px 138px;
+            width: 849px;
+            height: 45px;
         }
 
         th {
@@ -121,15 +124,8 @@
         tbody tr:nth-child(even) {
             background-color: #6c6c6c;
         }
-
-        .movie-table__row-cell {
-            border-radius: 10px 0px 0px 0px;
-            padding: 0 0 0 79px;
-
-        }
-
-        .movie-table__row-cell1 {
-            border-radius: 0px 10px 0px 0px;
+        .movie-table__row-cell-1 {
+            border-radius: 10px 0px 0px 0px;  
         }
 
         .movie-table__row-cell-3 {
@@ -142,6 +138,12 @@
 
         .col2-3 {
             border-radius: 0px 0px 10px 0px;
+        }
+        .start{
+           color: #FFFFFF;
+        }
+        .films{
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -281,11 +283,11 @@
     </p>
     <div>
         <table class="movie-table">
+            <h2>Выберите фильм</h2>
             <thead>
-                <h2>Выберите фильм</h2>
                 <tr class="movie-table__row">
-                    <th class="movie-table__row-cell">
-                        <a href="#"><span>Начало сеанса</span>
+                    <th class="movie-table__row-cell-1">
+                        <a href="#"><span class="start">Начало сеанса</span>
                             <svg width="8" height="4.5" viewBox="0 0 9 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
@@ -294,7 +296,7 @@
                         </a>
                     </th>
                     <th class="movie-table__row-cell-2">
-                        <a href="#"><span>Название фильма</span>
+                        <a href="#"><span class="films">Название фильма</span>
                             <svg width="8" height="4.5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
