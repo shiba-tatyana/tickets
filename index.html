@@ -10,14 +10,12 @@
     <style>
         .movie-table {
             border-collapse: collapse;
-            margin: 84px 137px 30px 138px;
-            width: 849px;
-            height: 45px;
+            width: 100%; 
         }
 
         th {
             color: #FFFFFF;
-            font-family: IBM Plex Sans;
+            font-family: 'IBM-Plex-Sans',sans-serif;
             font-weight: 600;
             padding: 9px 0px 10px 39px;
             background: #A3CC40;
@@ -30,12 +28,23 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
-            font-family: IBM Plex Sans;
-            padding: 18.3px 0px 18.77px 39px;
+            font-family: 'IBM-Plex-Sans',sans-serif;
+            padding: 18px 2px 18px 39px;
+            color: #FFFFFF;
         }
 
         tr {
             text-align: top;
+        }
+        .movie-table__link svg{
+            display: none;
+        }
+        .movie-table__link_asc svg{
+            display: inline-block;
+        }
+        .movie-table__link_desc svg{
+            display: inline-block;
+            transform: rotate(180deg);
         }
 
         textarea {
@@ -88,12 +97,11 @@
         }
 
         h2 {
-            font-family: IBM Plex Sans;
+            font-family: 'IBM-Plex-Sans',sans-serif;
             font-weight: 500;
             font-size: 48px;
             line-height: 62px;
             color: #A3CC40;
-            margin: 0px 595px 93px 0px;
         }
 
         li {
@@ -124,7 +132,7 @@
         tbody tr:nth-child(even) {
             background-color: #6c6c6c;
         }
-        .movie-table__row-cell-1 {
+        .movie-table__row-zero {
             border-radius: 10px 0px 0px 0px;  
         }
 
@@ -132,7 +140,7 @@
             border-radius: 0px 10px 0px 0px;
         }
 
-        .col2-1 {
+        .radius {
             border-radius: 0px 0px 0px 10px;
         }
 
@@ -145,29 +153,49 @@
         .films{
             color: #FFFFFF;
         }
+        .ganre{
+            color: #FFFFFF ;
+        }
+        .gal{
+            fill: #A3CC40;;
+        }
+        .container{
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .table__checkbox input{
+            display: none;
+        }.table__checkbox svg{
+            fill: #fff;
+        }
+        .table__checkbox input:checked + svg{
+            fill: #A3CC40;
+        }
     </style>
 </head>
 
 <body>
     <div style="background: grey;">
+        <a href="https://innopolis.university/" target="https://innopolis.university/">
         <svg class="logo">
             <use xlink:href="#ico-logo"></use>
         </svg>
+         </a>
         <header>
             <nav>
                 <ul class="topmenu">
-                    <li><a href="#tel:+78003551256">+7 (800) 355 12-56</a></li>
-                    <li><a href="#mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
+                    <li><a href="tel:+78003551256">+7 (800) 355 12-56</a></li>
+                    <li><a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
                     <li><a href="#">ул.Спортивная д.1</a></li>
-                    <li><a href="#why are we">Почему Мы?</a></li>
-                    <li><a href="#select a movie">Выберите фильм</a></li>
-                    <li><a href="#a gift to everyone">Подарок каждому</a></li>
+                    <li><a href="#whyarewe">Почему Мы?</a></li>
+                    <li><a href="#selectamovie">Выберите фильм</a></li>
+                    <li><a href="#agiftToEveryone">Подарок каждому</a></li>
                     <li><a href="#films">Фильмы</a></li>
                     <li><a href="#goods">Товары</a></li>
                 </ul>
             </nav>
-    </div>
     </header>
+    </div>
     <h1>Закажите билет в кино</h1>
     <span>Всем покупателям подарок!</span>
     <div>
@@ -281,13 +309,14 @@
         nemo sapiente velit tenetur quos? Quae, sequi? Reprehenderit commodi molestias ratione veritatis rem sit,
         officiis dicta fuga!
     </p>
-    <div>
+    <div class="container">
+        <h2>Выберите фильм</h2>
         <table class="movie-table">
-            <h2>Выберите фильм</h2>
             <thead>
                 <tr class="movie-table__row">
+                    <th class="movie-table__row-zero"></th>
                     <th class="movie-table__row-cell-1">
-                        <a href="#"><span class="start">Начало сеанса</span>
+                        <a class="movie-table__link movie-table__link_asc" href="#"><span class="start">Начало сеанса</span>
                             <svg width="8" height="4.5" viewBox="0 0 9 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
@@ -296,7 +325,7 @@
                         </a>
                     </th>
                     <th class="movie-table__row-cell-2">
-                        <a href="#"><span class="films">Название фильма</span>
+                        <a class="movie-table__link movie-table__link_desc href="#"><span class="films">Название фильма</span>
                             <svg width="8" height="4.5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
@@ -305,59 +334,85 @@
                         </a>
 
                     </th>
-                    <th class="movie-table__row-cell-3">Жанр</th>
+                    <th class="movie-table__row-cell-3">
+                        <a href="#" class="movie-table__link">
+                            <span class="ganre">Жанр</span>
+                            <svg width="8" height="4.5" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
+                            </svg>
+                        </a>  
+                    </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="col1">
-                        <svg style="padding-right: 24.79px;" width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
+                    <td>
+                        <label class="table__checkbox">
+                            <input type="checkbox">
+                            <svg width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
                                 fill="white" />
                         </svg>
-
+                        </label>
+                    </td>
+                    <td class="col1">
                         <span>10:00</span>
                     </td>
                     <td class="col1">Человек-паук</td>
                     <td class="col1">Фантастика, боевик, приключения</td>
                 </tr>
                 <tr>
-                    <td class="col2">
-                        <svg style="padding-right: 24.79px;" width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
+                    <td>
+                        <label class="table__checkbox">
+                            <input type="checkbox">
+                            <svg class="gal" width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                fill="#A3CC40" />
+                                />
                         </svg>
+                        </label>
+                    </td>
+                    <td class="col2">
                         <span>12:00</span>
                     </td>
                     <td class="col2">Собачья жизнь 2</td>
                     <td class="col2">Фэнтэзи, драма, комедия</td>
                 </tr>
                 <tr>
+                    <td>
+                        <label class="table__checkbox">
+                            <input type="checkbox">
+                        </label>
+                        <svg width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
+                            fill="white" />
+                    </svg>
+                    </td>
                     <td class="col1">
-                        <svg style="padding-right: 24.79px;" width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                fill="white" />
-                        </svg>
-
                         <span>14:00</span>
                     </td>
                     <td class="col1">История игрушек</td>
                     <td class="col1">Мультфильм, фэнтэзи, комедия</td>
                 </tr>
                 <tr>
-                    <td class="col2-1">
-                        <svg style="padding-right: 24.79px;" width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
+                    <td class="radius">
+                        <label class="table__checkbox">
+                            <input type="checkbox">
+                            <svg width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
                                 fill="white" />
                         </svg>
+                        </label>
+                    </td>
+                    <td class="col2-1">
                         <span>16:00</span>
                     </td>
                     <td class="col2-2">Люди в чёрном: Интэрнэшнл</td>
@@ -366,7 +421,7 @@
             </tbody>
 
         </table>
-        <p style="margin: 30px 292px 199px 293px;">
+        <p style="margin: 30px auto 0; max-width: 540px;">
 
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam nulla amet, incidunt in dicta possimus
             expedita fuga excepturi consequatur consequuntur soluta qui, aliquid porro veritatis maiores ducimus.
