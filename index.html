@@ -6,198 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Продажа билетов в кино в Иннополисе</title>
+    <link rel="stylesheet" href="https://gist.github.com/DavidWells/18e73022e723037a50d6">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <style>
-        .movie-table {
-            border-collapse: collapse;
-            width: 100%; 
-        }
 
-        th {
-            color: #FFFFFF;
-            font-family: 'IBM-Plex-Sans',sans-serif;
-            font-weight: 600;
-            padding: 9px 0px 10px 39px;
-            background: #A3CC40;
-            font-size: 20px;
-            line-height: 26px;
-            text-align: left;
-        }
-
-        td {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            font-family: 'IBM-Plex-Sans',sans-serif;
-            padding: 18px 2px 18px 39px;
-            color: #FFFFFF;
-        }
-
-        tr {
-            text-align: top;
-        }
-        .movie-table__link svg{
-            display: none;
-        }
-        .movie-table__link_asc svg{
-            display: inline-block;
-        }
-        .movie-table__link_desc svg{
-            display: inline-block;
-            transform: rotate(180deg);
-        }
-
-        textarea {
-            resize: none;
-            width: 500px;
-        }
-
-        ul {
-            position: absolute;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-
-        }
-
-        li {
-            display: inline;
-        }
-
-        @font-face {
-            font-family: 'IBM-Plex-Sans';
-            src: url('fonts/IBMPlexSans-Light.ttf');
-            font-style: normal;
-            font-weight: 100;
-        }
-
-        @font-face {
-            font-family: 'IBM-Plex-Sans';
-            src: url('fonts/IBMPlexSans-Regular.ttf');
-            font-style: normal;
-            font-weight: 400;
-        }
-
-        @font-face {
-            font-family: 'IBM-Plex-Sans';
-            src: url('fonts/IBMPlexSans-Medium.ttf');
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'IBM-Plex-Sans';
-            src: url('fonts/IBMPlexSans-SemiBold.ttf');
-            font-style: normal;
-            font-weight: 600;
-        }
-
-        h2 {
-            font-family: 'IBM-Plex-Sans',sans-serif;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 62px;
-            color: #A3CC40;
-        }
-
-        li {
-            position: relative;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.33;
-            padding: 16px;
-        }
-
-        .logo {
-            width: 156px;
-            height: 40px;
-        }
-
-        p {
-            font-size: 11px;
-            line-height: 14px;
-            text-align: center;
-            color: #333333;
-
-        }
-
-        tbody tr:nth-child(odd) {
-            background-color: #373737;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #6c6c6c;
-        }
-        .movie-table__row-zero {
-            border-radius: 10px 0px 0px 0px;  
-        }
-
-        .movie-table__row-cell-3 {
-            border-radius: 0px 10px 0px 0px;
-        }
-
-        .radius {
-            border-radius: 0px 0px 0px 10px;
-        }
-
-        .col2-3 {
-            border-radius: 0px 0px 10px 0px;
-        }
-        .start{
-           color: #FFFFFF;
-        }
-        .films{
-            color: #FFFFFF;
-        }
-        .ganre{
-            color: #FFFFFF ;
-        }
-        .gal{
-            fill: #A3CC40;;
-        }
-        .container{
-            max-width: 850px;
-            margin: 0 auto;
-        }
-        .table__checkbox input{
-            display: none;
-        }.table__checkbox svg{
-            fill: #fff;
-        }
-        .table__checkbox input:checked + svg{
-            fill: #A3CC40;
-        }
     </style>
 </head>
 
 <body>
-    <div style="background: grey;">
-        <a href="https://innopolis.university/" target="https://innopolis.university/">
-        <svg class="logo">
-            <use xlink:href="#ico-logo"></use>
-        </svg>
-         </a>
-        <header>
-            <nav>
-                <ul class="topmenu">
-                    <li><a href="tel:+78003551256">+7 (800) 355 12-56</a></li>
-                    <li><a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
-                    <li><a href="#">ул.Спортивная д.1</a></li>
-                    <li><a href="#whyarewe">Почему Мы?</a></li>
-                    <li><a href="#selectamovie">Выберите фильм</a></li>
-                    <li><a href="#agiftToEveryone">Подарок каждому</a></li>
-                    <li><a href="#films">Фильмы</a></li>
-                    <li><a href="#goods">Товары</a></li>
-                </ul>
-            </nav>
-    </header>
-    </div>
-    <h1>Закажите билет в кино</h1>
-    <span>Всем покупателям подарок!</span>
+        <div class="block01">
+            <header class="block01__header">
+                <div class="logo">
+                    <a href="https://innopolis.university/" target="https://innopolis.university/">
+                        <svg class="logo">
+                            <use xlink:href="#ico-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <nav class="block01__menu">
+                    <ul>
+                        <li><a class="block01__menu link-white" href="tel:+78003551256">+7 (800) 355 12-56</a></li>
+                        <li><a class="block01__menu link-white" href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                        </li>
+                        <li><a class="block01__menu link-white" href="#">ул.Спортивная д.1</a></li>
+                        <li><a class="block01__menu call" href="#">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z"
+                                        fill="#333333" />
+                                </svg>
+
+                                <span>Заказать звонок</span>
+                            </a>
+                        </li>
+                        <li><a class="block01__menu-why" href="#whyarewe">Почему Мы?</a></li>
+                        <li><a class="block01__menu-movie" href="#selectamovie">Выберите фильм</a></li>
+                        <li><a class="block01__menu-gift" href="#agiftToEveryone">Подарок каждому</a></li>
+                        <li><a class="block01__menu-film" href="#films">Фильмы</a></li>
+                        <li><a class="block01__menu-goods" href="#goods">Товары</a></li>
+                        <li>
+                            <a class="block01__menu-ru" href="#">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.388 9H0.032V0.624H3.644C4.396 0.624 4.988 0.852 5.42 1.308C5.852 1.756 6.068 2.368 6.068 3.144C6.068 3.744 5.928 4.244 5.648 4.644C5.376 5.036 4.972 5.312 4.436 5.472L6.248 9H4.736L3.056 5.616H1.388V9ZM3.548 4.476C3.892 4.476 4.16 4.388 4.352 4.212C4.544 4.028 4.64 3.768 4.64 3.432V2.856C4.64 2.52 4.544 2.264 4.352 2.088C4.16 1.904 3.892 1.812 3.548 1.812H1.388V4.476H3.548ZM9.02694 0.624V5.784C9.02694 6.496 9.16294 7.032 9.43494 7.392C9.70694 7.752 10.1709 7.932 10.8269 7.932C11.4829 7.932 11.9469 7.752 12.2189 7.392C12.4909 7.032 12.6269 6.496 12.6269 5.784V0.624H13.9589V5.568C13.9589 6.184 13.9029 6.716 13.7909 7.164C13.6789 7.612 13.4989 7.984 13.2509 8.28C13.0029 8.568 12.6789 8.784 12.2789 8.928C11.8869 9.072 11.4029 9.144 10.8269 9.144C10.2509 9.144 9.76294 9.072 9.36294 8.928C8.97094 8.784 8.65094 8.568 8.40294 8.28C8.15494 7.984 7.97494 7.612 7.86294 7.164C7.75094 6.716 7.69494 6.184 7.69494 5.568V0.624H9.02694Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="h1">
+            <h1>Закажите билет в кино</h1>
+        </div>
+        
+        <div class="podzog"> <span>Всем покупателям подарок!</span></div>
+         </div>
+    
     <div>
         <span><strong>Добро пожаловать</strong></span>
 
@@ -316,7 +189,8 @@
                 <tr class="movie-table__row">
                     <th class="movie-table__row-zero"></th>
                     <th class="movie-table__row-cell-1">
-                        <a class="movie-table__link movie-table__link_asc" href="#"><span class="start">Начало сеанса</span>
+                        <a class="movie-table__link movie-table__link_asc" href="#"><span class="start">Начало
+                                сеанса</span>
                             <svg width="8" height="4.5" viewBox="0 0 9 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
@@ -325,7 +199,8 @@
                         </a>
                     </th>
                     <th class="movie-table__row-cell-2">
-                        <a class="movie-table__link movie-table__link_desc href="#"><span class="films">Название фильма</span>
+                        <a class="movie-table__link movie-table__link_desc href=" #"><span class="films">Название
+                                фильма</span>
                             <svg width="8" height="4.5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
@@ -341,7 +216,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
                             </svg>
-                        </a>  
+                        </a>
                     </th>
                 </tr>
             </thead>
@@ -351,11 +226,11 @@
                         <label class="table__checkbox">
                             <input type="checkbox">
                             <svg width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                fill="white" />
-                        </svg>
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
+                                    fill="white" />
+                            </svg>
                         </label>
                     </td>
                     <td class="col1">
@@ -369,11 +244,10 @@
                         <label class="table__checkbox">
                             <input type="checkbox">
                             <svg class="gal" width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                />
-                        </svg>
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" />
+                            </svg>
                         </label>
                     </td>
                     <td class="col2">
@@ -388,11 +262,11 @@
                             <input type="checkbox">
                         </label>
                         <svg width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                            fill="white" />
-                    </svg>
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
+                                fill="white" />
+                        </svg>
                     </td>
                     <td class="col1">
                         <span>14:00</span>
@@ -405,11 +279,11 @@
                         <label class="table__checkbox">
                             <input type="checkbox">
                             <svg width="10.03" height="7.94" viewBox="0 0 11 9" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                                fill="white" />
-                        </svg>
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
+                                    fill="white" />
+                            </svg>
                         </label>
                     </td>
                     <td class="col2-1">

@@ -1,0 +1,21 @@
+.link-white{
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 44px;
+
+}
+.block01__header{
+    padding-right: 89px;
+   
+    
+}
+.block01{
+    background:violet;
+    width:1171px;
+    margin: -39px -39px 0px 8px;
+    
+}
+
