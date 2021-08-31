@@ -10,26 +10,33 @@ a {
 }
 
 li {
+    display: inline-block;
     list-style-type: none;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
-    padding: 16px;
+   
 }
-
-h2 {
+.zagolovok1 h1{
     font-family: 'IBM-Plex-Sans',sans-serif;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 62px;
-    color: #A3CC40;
+    font-weight: 100;
+    font-size: 68px;
+    line-height: 88px;
+    color:  #FFFFFF;
+}
+.zagolovok1__podzog{
+    font-family: 'IBM-Plex-Sans',sans-serif;
+    font-weight: normal;
+    font-size: 41px;
+    line-height: 53px;
+    color:  #FFFFFF;
 }
 
 .logo {
     width: 156px;
     height: 40px;
-    padding-top: 51px;
-    padding-left: 89px;
+    margin-top: 51px;
+    margin-right: 44px;
+   
 }
 
 p {
@@ -39,5 +46,6 @@ p {
     color: #333333;
 
 }
+
 
 

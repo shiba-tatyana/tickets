@@ -4,18 +4,53 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    padding-left: 44px;
+}
+.block02__menu{
+    width: 850px;
+    margin-left: 200px;
+    
+}
+.conteiner{
+    background: url(../images/zal.jpg); color: #161616;
+    min-height: 728px;
+    width:100%;
+}
+.conteiner__conteiner1{
+    width: 947px;
+    margin: 0 auto;
+}
+.link-call{
+    padding: 2px 7px 3px 8px;
+    border-radius: 6px;
+    border: 2px;
+    background: white;
+    width: 130px;
+}
+.link-call:hover{
+    transition: 1s;
+    background: #A3CC40;
+    border-bottom: 1px; color: #FFFFFF;
 
 }
-.block01__header{
-    padding-right: 89px;
+
+.row1{
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    margin: 0 auto ;
+    text-align: center;
+    
+}
+.row2{
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    margin: 0 auto;
+    text-align: center;
    
-    
 }
-.block01{
-    background:violet;
-    width:1171px;
-    margin: -39px -39px 0px 8px;
+
+
     
-}
+    
 

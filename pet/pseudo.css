@@ -1,0 +1,22 @@
+.test{
+    font-size: 20px;
+    border: 1px solid red;
+}
+.test p{
+    border: inherit;
+
+}
+.content{
+    color: yellow !important;
+
+}
+.content{
+    color: yellowgreen;
+    font-size: 15px;
+}
+#pagewrapper {
+    color: tomato;
+    font-size: 30px;
+}
+.content :not(.secondary) {color: teal;}
+body :not(.content) {color: red;}
