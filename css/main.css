@@ -560,11 +560,41 @@
 }
 .block11__saite{
     margin-bottom: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
 }
-.block11__saite-href li a{
+.block11__saite-href li {
     margin-bottom: 12px;
     max-width: 111px;
 }
+.block11__saite-white{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
 .block11_contact{
     margin-bottom: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #FFFFFF;
 }
+.block11__white{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+.block11__info li{
+   margin-bottom: 12px;
+}
+
+
+
