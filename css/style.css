@@ -1,7 +1,7 @@
 
 textarea {
-    resize: none;
-    width: 500px;
+  resize: none;
+  
 }
 
 a {
@@ -9,7 +9,7 @@ a {
 
 }
 
-li {
+.block01__menu li{
     display: inline-block;
     list-style-type: none;
     font-size: 12px;
@@ -20,14 +20,14 @@ li {
     font-family: 'IBM-Plex-Sans',sans-serif;
     font-weight: 100;
     font-size: 68px;
-    line-height: 88px;
+    line-height: 1.3;
     color:  #FFFFFF;
 }
 .zagolovok1__podzog{
     font-family: 'IBM-Plex-Sans',sans-serif;
     font-weight: normal;
     font-size: 41px;
-    line-height: 53px;
+    line-height:1.3;
     color:  #FFFFFF;
 }
 
@@ -46,8 +46,9 @@ p {
     color: #333333;
 
 }
-.body{
-    font-family: 'IBM-Plex-Sans';
+body{
+    font-family: "IBM-Plex-Sans" ,sans-serif;
+    font-style: normal;
     
 }
 
