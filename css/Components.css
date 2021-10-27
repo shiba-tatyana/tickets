@@ -64,7 +64,7 @@ th {
     color: #FFFFFF;
     font-family: 'IBM-Plex-Sans',sans-serif;
     font-weight: 600;
-    padding: .45rem 0rem .5rem 1.95rem;
+    padding: .45rem 0.7rem .5rem 1.55rem;
     background: #A3CC40;
     font-size: 1rem;
     line-height: 1.3;
@@ -76,7 +76,7 @@ td {
     font-size: 0.7rem;
     line-height: 1.3;
     font-family: 'IBM-Plex-Sans',sans-serif;
-    padding: .9rem .1rem .9rem 1.95rem;
+    padding: .3rem .1rem .9rem 1.55rem;
     color: #FFFFFF;
 }
 
