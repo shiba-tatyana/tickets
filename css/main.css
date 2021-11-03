@@ -63,8 +63,8 @@ html{
 }
 .block02{
     background: #FFFFFF;
-    box-shadow: 0px 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
-    border-radius: 10px;
+    box-shadow: 0rem 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
+    border-radius: .5rem;
     position: absolute;
     min-height: 11.05rem;
     min-width: 21.3rem;
@@ -115,7 +115,7 @@ html{
 .container__container1{
     width: 47.35rem;
     margin: 0 auto;
-    padding: 0 1.25;
+    padding: 0 1.25rem;
 }
 .link-call{
     padding:0.1rem 0.35rem 0.15rem 0.4rem;
@@ -133,22 +133,16 @@ html{
 
 .row1{
     box-sizing: border-box;
-    width: 33.33%;
     text-align: center;
-    padding: 0 1.2rem;
-    margin-bottom: 1.45rem;
+   
 }
 .row1 img{
     max-width: 100%;
 }
 .block03{
-    margin-right: -1.25rem;
-    margin-left: -1.25rem;
-    overflow: hidden;
-    margin-bottom: 7.2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 2.5rem 1.9rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 .block04{
     margin-bottom: 5.35rem;
@@ -234,11 +228,8 @@ html{
     max-width: 15.1rem;
 }
 .block06{
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    margin-bottom: 3.95rem;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .films__text{
     margin-bottom: 1.5rem;
@@ -257,7 +248,6 @@ html{
 .block06__movie1{
     flex-basis: 33.33%;
     position: relative;
-    width: 33.33%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -382,10 +372,10 @@ html{
 }
 .block08__review1 img{
     width: 100%;
-    border-radius: 0.4rem 0.4rem 0px 0px;
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 .block08__bg1{
-    border-radius: 0.45rem 0.45rem 0px 0px;
+    border-radius: 0.45rem 0.45rem 0rem 0rem;
     max-width: 210vw;
     max-height: 153vh;
     left: 7.1rem;
@@ -435,8 +425,8 @@ html{
     display: block;
     border-bottom: 5rem solid white;
     border-left: 100vw solid transparent;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0rem;
+    left: 0rem;
     position: absolute;
 }
 .block08__review2{
@@ -450,7 +440,7 @@ html{
     height: 8.9rem;
     left: 22.05rem;
     top: 242.8rem;
-    border-radius: .5rem .5rem 0px 0px;
+    border-radius: .5rem .5rem 0rem 0rem;
     margin-bottom: .85rem;
 }
 .block08__descr2{
@@ -474,7 +464,7 @@ html{
 }
 .block08__bg3{
     background: url("../images/review3.jpg");
-    border-radius: .4rem .4rem 0px 0px;
+    border-radius: .4rem .4rem 0rem 0rem;
     width: 10.5rem;
     height: 7.6rem;
     left: 38.8rem;
@@ -750,7 +740,6 @@ html{
 .block__footer-wrap{
     margin-right: -1.25rem;
     margin-left: -1.25rem;
-    overflow: hidden;
     display: flex;
 
 }
@@ -771,5 +760,4 @@ html{
     fill:gray;
 
 }
-
 

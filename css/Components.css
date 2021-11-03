@@ -14,19 +14,19 @@
     transform: rotate(180deg);
 }
 .movie-table__row-zero {
-    border-radius: .5rem 0px 0px 0px;  
+    border-radius: .5rem 0rem 0rem 0rem;  
 }
 
 .movie-table__row-cell-3 {
-    border-radius: 0px .5rem 0px 0px;
+    border-radius: 0rem .5rem 0rem 0rem;
 }
 
 .radius {
-    border-radius: 0px 0px 0px .5rem;
+    border-radius: 0rem 0rem 0rem .5rem;
 }
 
 .col2-3 {
-    border-radius: 0px 0px .5rem 0px;
+    border-radius: 0rem 0rem .5rem 0rem;
 }
 .start{
    color: #FFFFFF;
@@ -76,17 +76,16 @@ td {
     font-size: 0.7rem;
     line-height: 1.3;
     font-family: 'IBM-Plex-Sans',sans-serif;
-    padding: .3rem .1rem .9rem 1.55rem;
+    padding: .5rem .1rem .5rem 1.55rem;
     color: #FFFFFF;
 }
 
 tr {
-    text-align: top;
+    vertical-align: auto;
 }
 
     
 .line2{
-    display: inline block;
     margin-right: 1.8rem;
     margin-bottom: 0.75rem;
     line-height: 1.3;
@@ -104,7 +103,7 @@ tr {
     color: #A3CC40;
 }
 
-.zagolovok1{
+.subject{
     margin: 0 auto;
     padding-bottom: 0.95rem;
     text-align: center;
