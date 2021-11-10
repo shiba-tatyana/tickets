@@ -1,5 +1,5 @@
 html{
-    font-size: 1.41vw;
+    font-size: 1.31vw;
 }
 .link-white{
     display: inline-block;
@@ -32,7 +32,6 @@ html{
 .block01__info{
     flex-basis: 80%;
     box-sizing: border-box;
-    padding:0.25rem 0 0;
     padding-top: 2.55rem;
 
 
@@ -43,7 +42,7 @@ html{
     list-style-type: none;
     font-size: 0.55rem;
     line-height: 2.4; 
-    margin-right: 1.8rem;
+    margin-right: 3.4rem;
   
 }
 .block01__menu2 li{
@@ -70,7 +69,7 @@ html{
     min-width: 21.3rem;
     right: 0;
     top: 0;
-    transform: translateY(-65%);
+    transform: translateY(-77%);
 }
 .block02__text1{
     font-style: normal;
@@ -79,6 +78,7 @@ html{
     line-height: 1.3;
     color: #333333;
     margin-bottom: 1.1rem;
+    margin-top: 1.5rem;
     
 }
 .block02__text2 p{
@@ -87,7 +87,7 @@ html{
     font-size: 0.55rem;
     line-height:1.3;
     color: #333333;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .block02__descr{
     padding-left: 2.35rem;
@@ -143,6 +143,7 @@ html{
     display: grid;
     gap: 2.5rem 1.9rem;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 7.2rem;
 }
 .block04{
     margin-bottom: 5.35rem;
@@ -230,6 +231,8 @@ html{
 .block06{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3.9rem;
+    overflow: hidden;
 }
 .films__text{
     margin-bottom: 1.5rem;
@@ -246,7 +249,6 @@ html{
     max-width: 100%;
 }
 .block06__movie1{
-    flex-basis: 33.33%;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -589,13 +591,31 @@ html{
 .block09__text5{
     margin-bottom: 2.4rem;
 }
-.block09__text5-chekbox{
+.block09__check{
+    display: none;
+}
+.block09__text5-checkbox{
     font-style: normal;
     font-weight: normal;
     font-size: .5rem;
     line-height: 1.3;
     color: #333333;
-    border: #A1A1A1
+    border: #A1A1A1;
+    display: flex;
+    align-items: center;
+}
+.block09__text5-checkbox:before{
+    content: "";
+    margin-right: .3rem;
+    width: .9rem;
+    height: .9rem;
+    border-radius: .25rem;
+    border: 1px solid #A3CC40;
+    flex: none;
+}
+.block09__check:checked + label:before{
+    background: url("../images/icon.svg") no-repeat center  #A3CC40;
+    
 }
 .block09__text6{
     background: #A3CC40;
@@ -614,6 +634,7 @@ html{
     background: white;
     color: #A3CC40;
 }
+
 .block10{
     margin: 0 auto;
     max-width: 48.65rem;
@@ -760,4 +781,5 @@ html{
     fill:gray;
 
 }
+
 
